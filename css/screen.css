@@ -1,4 +1,4 @@
-body, div, h1, h2, ol, form, iframe, img, textarea {
+body, div, h1, h2, h3, ol, form, p, iframe, img, textarea, blockquote {
 	border:none;
 	margin:0;
 	padding:0;
@@ -10,7 +10,7 @@ ul {
 }
 
 body {
-	background: url(/images/background.png);
+	background: url(http://endlesswhileloop.com/images/background.png);
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 14px;
 	text-rendering: optimizeLegibility;
@@ -26,17 +26,19 @@ strong {
 	font-size: 16px;
 }
 
-#box {
+.box {
 	background: #FFF;
+	padding: 20px;
+ 	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+ 	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+ 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);      
+}
+
+#main {
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 100px;
-	padding: 20px;
-
- 	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
- 	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
- 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);      
 }
 
 a {
@@ -47,4 +49,79 @@ a {
 
 a:hover {
 	border-bottom: none;
+}
+
+/* Blog Stuff */
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 610px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	overflow: auto;
+	padding-left: 15px;
+}
+
+#header {
+	position: relative;
+}
+
+#contents {
+	width: 580px;
+	padding-left: 15px;
+	float: left;
+}
+
+#left {
+	float: left;
+	width: 580px;
+}
+
+#right {
+	float: left;
+	width: 200px;
+}
+
+.post {
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.post .contents {
+	padding: 20px;
+}
+
+.post img.main {
+	width: 580px;
+}
+
+.post blockquote {
+	font-family: Georgia;
+	padding: 20px;
+	font-size: 18px;
+	background: #EEE;
+}
+
+.post div.attribution {
+	padding: 20px;
+	text-align: right;
+}
+
+.post .contents h2 {
+	padding-bottom: 10px;
+}
+
+#title {
+	float: left;
+	padding: 10px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+
+#menu {
+	float: right;
+	padding: 10px;
+	margin-right: 15px;
+	position: absolute;
+	right: 0px;
 }
